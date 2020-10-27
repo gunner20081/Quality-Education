@@ -24,7 +24,7 @@ section {
   top: 8%;
   left: 36%;
   /* Preserve aspet ratio */
-  width: 100%;
+  width: fit-content;
   height: auto;
   font-family: "Athiti", sans-serif;
 }
