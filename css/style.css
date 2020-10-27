@@ -30,7 +30,7 @@ section {
 
 .topic p {
     font-size: 5rem;
-    color: #c5d725;
+    color: #dcfb00;
     margin-bottom: -0.5em;
 }
 
@@ -52,7 +52,7 @@ section {
     background: #dcfb00;
     width: 220px;
     margin-left: 43%;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .keyword p {
@@ -63,12 +63,67 @@ section {
     font-family: 'Athiti', sans-serif;
 }
 
+.home {
+    z-index: 0;
+    position: fixed;
+    top: 2%;
+    left: -43%;
+    /* Preserve aspet ratio */
+    width: 100%;
+    height: auto;
+    font-family: 'Athiti', sans-serif;
+}
+
+.home p {
+    font-size: 3.5rem;
+    color:  #dcfb00;
+    margin-bottom: -0.5em;
+}
+
+.preface {
+    position: absolute;
+    background: white;
+    width: 950px;
+    margin-left: 22%;
+    margin-top: 15%;
+}
+
+.preface p {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+    margin-bottom: -0.1em;
+    font-family: 'Athiti', sans-serif;
+}
+
+.word {
+    font-size: 1.2em;
+    font-family: 'Athiti', sans-serif;
+    position: relative;
+    background: #dcfb00;
+    width: 450px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.word2 {
+    font-size: 2em;
+    font-family: 'Athiti', sans-serif;
+    position: relative;
+    background: #dcfb00;
+    width: 100px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+
 .box_l,
 .box_r {
     position: relative;
     width: 35%;
     height: 100%;
     background: #000;
+    z-index: 1;
 }
 
 .box_t,
