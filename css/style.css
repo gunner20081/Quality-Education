@@ -6,7 +6,10 @@
   width: 100%;
   height: auto;
 }
-
+@font-face{
+  font-family: 'ChulaCharas';
+  src: url(/css/ChulaCharasNewReg.ttf) format('truetype');
+}
 body {
   margin: 0;
   width: 100%;
@@ -59,7 +62,7 @@ section {
   font-size: 2em;
   padding-top: 10px;
   margin-bottom: -0.1em;
-  font-family: "Athiti", sans-serif;
+  font-family: "ChulaCharas", sans-serif;
 }
 
 .home {
@@ -92,12 +95,12 @@ section {
   font-size: 2em;
   padding-top: 10px;
   margin-bottom: -0.1em;
-  font-family: "Athiti", sans-serif;
+  font-family: "ChulaCharas", sans-serif;
 }
 
 .word {
   font-size: 1.2em;
-  font-family: "Athiti", sans-serif;
+  font-family: "ChulaCharas", sans-serif;
   position: relative;
   background: #dcfb00;
   width: 450px;
