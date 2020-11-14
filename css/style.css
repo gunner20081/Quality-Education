@@ -1,39 +1,47 @@
+.logo {
+  z-index: 999;
+  position: fixed;
+  top: 2vh;
+  left: 2vw;
+  font-size: 4rem;
+  color: #dcfb00;
+  font-family: "Athiti", sans-serif;
+  display: none;
+}
+.page {
+  position: absolute;
+  z-index: 1;
+  min-width: 100vw;
+}
 #bg {
   position: absolute;
-  top: -30%;
+  top: 0;
   left: 0;
   /* Preserve aspet ratio */
-  width: 100%;
-  height: auto;
+  max-width: 100vw;
+  min-height: auto;
 }
 
-#bg2 {
+.txt_hl {
   position: absolute;
-  /* Preserve aspet ratio */
-  left: -15%;
-  width: 115%;
-  height: auto;
-}
-
-#bg3 {
-  position: relative;
-  /* Preserve aspet ratio */
-  width: 50%;
-  height: auto;
-}
-
-#bg4 {
-  top: 250%;
+  top: -10vh;
   left: 0;
+  display: none;
+}
+.txt_hl .txt {
+  font-family: "Athiti", sans-serif;
+  font-size: 3em;
+}
+.txt_hl img {
   position: absolute;
-  /* Preserve aspet ratio */
-  width: 100%;
-  height: 100%;
+  width: 12vw;
+  left: -2vw;
+  z-index: -1;
 }
 
-@font-face{
-  font-family: 'ChulaCharas';
-  src: url(/css/ChulaCharasNewReg.ttf) format('truetype');
+@font-face {
+  font-family: "ChulaCharas";
+  src: url(/css/ChulaCharasNewReg.ttf) format("truetype");
 }
 body {
   margin: 0;
@@ -44,9 +52,7 @@ body {
 section {
   position: relative;
   height: 100vh;
-  
 }
-
 
 .topic {
   z-index: 1;
@@ -67,8 +73,30 @@ section {
 
 .box {
   position: absolute;
-  left: 43%;
-  display: none;
+  width: 100vw;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  /*
+  Nope =(
+  margin-left: -25%;
+  margin-top: -25%;
+  */
+
+  /* 
+  Yep!
+  */
+  transform: translate(-50%, -50%);
+
+  /*
+  Not even necessary really. 
+  e.g. Height could be left out!
+  */
+  width: 40%;
+  height: 50%;
 }
 
 .box2 {
@@ -78,8 +106,12 @@ section {
 }
 
 .keyword {
+  position: relative;
   background: #dcfb00;
-  width: 220px;
+  padding: 30px;
+  margin: auto;
+  width: fit-content;
+  text-align: -webkit-center;
 }
 
 .keyword p {
@@ -90,12 +122,21 @@ section {
   font-family: "ChulaCharas", sans-serif;
 }
 
-.preface {
-  position: absolute;
-  background: white;
-  width: 950px;
+.chapter_1 {
+  margin-top: 30vh;
+  text-align: -webkit-center;
 }
-
+.chapter_1 .post_it {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  height: 40vh;
+}
+.chapter_1 .l_t,
+.chapter_1 .l_b {
+  position: absolute;
+  width: 20vw;
+}
 .preface p {
   text-align: center;
   font-size: 2em;
@@ -120,8 +161,6 @@ section {
   color: #dcfb00;
   margin-bottom: -0.5em;
 }
-
-
 
 .word {
   font-size: 1.2em;
@@ -153,18 +192,18 @@ section {
   position: relative;
 }
 
-
-.trigger_1 {
+.trigger_1,
+.trigger_2 {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  min-width: 100vw;
 }
-
 
 .box_l,
 .box_r {
   position: relative;
-  width: 35%;
+  width: 34%;
   height: 100%;
   background: #000;
 }
