@@ -49,8 +49,7 @@ tl({
   }
 })
   .to(".box_l, .box_r", { width: '0%', duration: 1 },1)
-  .to(".box_t, .box_b", { height: '0%', duration: 1},1)
-  .to(".box2", { display: 'block', bottom: '70%', duration: 2 });
+  .to(".box_t, .box_b", { height: '0%', duration: 1},1);
 
 
 tl({
@@ -72,32 +71,33 @@ tl({
     trigger: ".chap1_1",
     start: "top bottom",
     end: "bottom top",
-    markers: false
+    markers: false,
+    scrub: true
   }
 })
-  .to(".chap1_txtbox", { text: "ตรงนี้ทําให้เราเห็นปัญหาหนึ่งอย่างชัดเจน นั่นคือ", ease: "none", duration:1})
-  .to(".p4_9", {background:'#dcfb00', duration:1},0);
+  .to(".chap1_txtbox", { text: "ตรงนี้ทําให้เราเห็นปัญหาหนึ่งอย่างชัดเจน นั่นคือ", ease: "none", duration:1});
 tl({
   scrollTrigger: {
     trigger: ".chap1_2",
     start: "top bottom",
-    end: "bottom top",
-    markers: false
+    end: "top top",
+    markers: true,
+    scrub: true
   }
 })
   .to(".chap1_txtbox", { text: "ตรงนี้ทําให้เราเห็นปัญหาหนึ่งอย่างชัดเจน นั่นคือ", ease: "none", duration: 1 })
-  .to(".p4_9", { background: '#d9d9d8', duration: 1 },0)
-  .to(".ppun_effect", { opacity: 1, duration: 1 });
+  .to(".r1, .r2", { background: '#d9d9d8', duration: 1 },1)
+  .to(".ppun_effect", { opacity: 1, duration: 1 },0);
 
   tl({
   scrollTrigger: {
     trigger: ".chap1_3",
     start: "top bottom",
     end: "bottom top",
-    markers: true
+    markers: false,
+    scrub: true
   }
 })
   .to(".chap1_txtbox", { text: "ตรงนี้ทําให้เราเห็นปัญหาหนึ่งอย่างชัดเจน นั่นคือ", ease: "none", duration: 1 })
-  .to(".p4_9", { background: '#030303', duration: 1 },0)
   .to(".ppun_effect", { opacity: 0, duration: 1 });
 

@@ -137,6 +137,9 @@ section {
   position: absolute;
   width: 20vw;
 }
+.r1, .r2{
+  background: #dcfb00;
+}
 .preface p {
   text-align: center;
   font-size: 2em;
