@@ -137,7 +137,13 @@ section {
   position: absolute;
   width: 20vw;
 }
-.r1, .r2{
+
+.chap1_topic {
+  font-family: "Athiti", sans-serif;
+  font-size: 3em;
+}
+.r1,
+.r2 {
   background: #dcfb00;
 }
 .preface p {
