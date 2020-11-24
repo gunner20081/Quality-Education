@@ -25,6 +25,7 @@
 .txt_hl {
   position: absolute;
   top: -10vh;
+  width: max-content;
   left: 0;
   display: none;
 }
@@ -114,8 +115,9 @@ section {
   text-align: -webkit-center;
 }
 
-.keyword p {
-  text-align: center;
+.keyword p,
+.chap1_des {
+  text-align: left;
   font-size: 2em;
   padding-top: 10px;
   margin-bottom: -0.1em;
@@ -229,4 +231,114 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* ---------slide-------- */
+.left_content {
+  position: relative;
+  font-family: "Athiti", sans-serif;
+  font-size: 90px;
+  width: fit-content;
+  margin-left: 4vw;
+  margin-top: 22vh;
+  color: #dcfb00;
+}
+
+.content {
+  position: relative;
+  padding: 30px;
+  width: fit-content;
+  /* position: relative;
+    font-size: 20px; */
+  margin-left: 10vw;
+  margin-top: 10vh;
+}
+.txt_hl img {
+  position: absolute;
+  width: 12vw;
+  left: -2vw;
+  z-index: -1;
+}
+
+.stxt {
+  font-family: "ChulaCharas", sans-serif;
+  font-size: 1.4em;
+}
+
+.txt_hl2 {
+  position: relative;
+  display: none;
+}
+.txt_hl2 .txt {
+  font-family: "Athiti", sans-serif;
+  font-size: 2em;
+}
+
+.txt_hl2 img {
+  position: absolute;
+  width: 12vw;
+  left: -2vw;
+}
+
+li {
+  color: #dcfb00; /* bullet color */
+}
+
+li span {
+  color: black; /* text color */
+}
+
+/* ------------------------ ask --------------- */
+.button {
+  background-color: #dcfb00;
+  border-radius: 12px;
+  border: none;
+  color: black;
+  padding: 15px 100px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 1px;
+  cursor: pointer;
+  font-family: "ChulaCharas", sans-serif;
+  font-size: 25px;
+  width: 39%;
+  max-width: 100%;
+  margin-top: 10px;
+}
+.icon {
+  size: 10%;
+}
+.chapter_1 p {
+  font-family: "Athiti", sans-serif;
+  font-size: 120px;
+  position: relative;
+  width: auto;
+  margin-bottom: -9px;
+}
+.chapter_1 p2 {
+  font-family: "ChulaCharas", sans-serif;
+  font-size: 40px;
+  position: relative;
+  width: auto;
+}
+.chapter_1 p4 {
+  font-family: "Athiti", sans-serif;
+  font-size: 25px;
+}
+.chapter_2 p {
+  font-family: "Athiti", sans-serif;
+  font-size: 40px;
+  position: relative;
+  width: auto;
+  margin-bottom: -9px;
+}
+.chapter_3 p {
+  font-family: "Athiti", sans-serif;
+  font-size: 50px;
+  position: relative;
+  width: auto;
+  margin-bottom: -9px;
+  color: #dcfb00;
 }
