@@ -56,7 +56,7 @@ tl({
   scrollTrigger: {
     trigger: ".trigger_2",
     start: "bottom bottom",
-    end: "250% top",
+    end: "200% top",
     markers: false,
     scrub: true,
     pin: true
@@ -65,39 +65,31 @@ tl({
   .to(".box_l, .box_r", { width: '0%', duration: 1 }, 1)
   .to(".box_t, .box_b", { height: '0%', duration: 1 }, 1);
 
-
 tl({
   scrollTrigger: {
-    trigger: ".chap1_1",
-    start: "top bottom",
-    end: "bottom top",
+    trigger: ".chap1_2",
+    start: "10% bottom",
+    end: "10% center",
     markers: false,
     scrub: true
   }
 })
-  .to(".chap1_txtbox", { text: "ไม่มีใครอยากแพ้ถ้าเปรียบเทียบเป้าหมายคือเส้นชัยนักเรียนก็คือผู้แข่งขันทุกคนปรารถนาที่จะคว้าชัยชนะนั้นแต่รางวัลดันมีจํากัดจึงต้องดิ้นรนเพื่อที่จะอยู่ลําดับต้นๆของการแข่งขันให้มีโอกาสชนะมากขึ้น", ease: "none", duration:1});
-tl({
-  scrollTrigger: {
-    trigger: ".chap1_2",
-    start: "top bottom",
-    end: "top top",
-    markers: true,
-    scrub: true
-  }
-})
-  .to(".chap1_txtbox", { text: "เป้าหมายเหมือนจุดสตาร์ทต่างแม้จุดมุ่งหมายจะเหมือนกันแต่ผู้เข้าแข่งขันที่มาจากต่างครอบครัวย่อมมีความไม่เท่ากันแต่แรกอยู่แล้วเปรียบเทียบเหมือนคนที่มีต้นทุนทางสังคมจะเริ่มในจุดที่ใกล้เส้นชัยกว่าคนที่ไม่มีอะไรเลย", ease: "none", duration: 1 })
+  .to(".hl_2", { display: 'block' })
+  .to(".chap1_topic", { text: "เป้าหมายเหมือน <p>จุดสตาร์ทต่าง", ease: "none", duration: 0 })
+  .to(".chap1_des", { text: "แม้จุดมุ่งหมายจะเหมือนกัน แต่ผู้เข้าแข่งขันที่มาจากต่างครอบครัว ย่อมมีความไม่เท่ากันแต่แรกอยู่แล้ว เปรียบเทียบเหมือนคนที่มีต้นทุนทางสังคม จะเริ่มในจุดที่ใกล้เส้นชัยกว่าคนที่ไม่มีอะไรเลย", ease: "none"}, 0)
   .to(".r1, .r2", { background: '#d9d9d8', duration: 1 },1)
   .to(".ppun_effect", { opacity: 1, duration: 1 },0);
 
   tl({
   scrollTrigger: {
     trigger: ".chap1_3",
-    start: "top bottom",
-    end: "bottom top",
+    start: "10% bottom",
+    end: "10% center",
     markers: false,
     scrub: true
   }
 })
-  .to(".chap1_txtbox", { text: "ต้องเป็นที่หนึ่งนะลูก เราถูกคาดหวังให้เก่ง ให้เร็วกว่าคน อื่น และได้รับรางวัลสูงสุด โดยไม่สร้าง ความผิดพลาดใด ๆ โดยเฉพาะจาก ครอบครัวที่หวังให้เรามีอนาคตที่ดีตาม ค่านิยมของสังคม", ease: "none", duration: 1 })
+    .to(".chap1_topic", { text: "ต้องเป็นที่หนึ่งนะลูก", ease: "none", duration: 1 })
+    .to(".chap1_des", { text: "เราถูกคาดหวังให้เก่ง ให้เร็วกว่าคนอื่น และได้รับรางวัลสูงสุด โดยไม่สร้างความผิดพลาดใด ๆ โดยเฉพาะจากครอบครัวที่หวังให้เรามีอนาคตที่ดี ตามค่านิยมของสังคม", ease: "none"}, 0)
   .to(".ppun_effect", { opacity: 0, duration: 1 });
 
