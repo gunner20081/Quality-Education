@@ -67,6 +67,18 @@ tl({
 
 tl({
   scrollTrigger: {
+    trigger: ".trigger_3",
+    start: "bottom bottom",
+    end: "200% top",
+    markers: true,
+    scrub: true,
+    pin: true
+  }
+})
+  .to(".trigger_3", { left:'-100vw', duration: 1 }, 0);
+
+tl({
+  scrollTrigger: {
     trigger: ".chap1_2",
     start: "10% bottom",
     end: "10% center",
