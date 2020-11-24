@@ -311,6 +311,14 @@ li span {
   position: relative;
   width: auto;
   margin-bottom: -9px;
+
+}
+.table {
+  font-family: "ChulaCharas", Bold  ;
+  font-size: 2.5em;
+  position: relative;
+  width: auto;
+  margin-bottom: -9px;
 }
 .chapter_1 p2 {
   font-family: "ChulaCharas", sans-serif;
