@@ -253,12 +253,7 @@ section {
   margin-left: 10vw;
   margin-top: 10vh;
 }
-.txt_hl img {
-  position: absolute;
-  width: 12vw;
-  left: -2vw;
-  z-index: -1;
-}
+
 
 .stxt {
   font-family: "ChulaCharas", sans-serif;
@@ -269,7 +264,7 @@ section {
   position: relative;
   display: none;
 }
-.txt_hl2 .txt {
+.txt_hl2 .txt2 {
   font-family: "Athiti", sans-serif;
   font-size: 2em;
 }
